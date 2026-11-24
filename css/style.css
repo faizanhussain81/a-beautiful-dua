@@ -162,14 +162,24 @@ body{background:#21182b;color:#fff8f3}
 @keyframes sceneFade{to{opacity:0;transform:scale(1.035);filter:blur(4px)}}
 @keyframes blossomWalk{0%{transform:scale(1.08);background-position:center 48%}100%{transform:scale(1.18);background-position:center 57%}}
 .letter-section{position:relative;z-index:5}
+/* Mobile readability: keep decorative petals behind the message and controls. */
 @media(max-width:700px){
  .entrance-caption{top:7%;width:92%}
  .entrance-caption h1{font-size:clamp(2.5rem,12vw,4rem)}
  .entrance-caption p{font-size:9px}
  .entrance-caption span{font-size:13px}
  .heart-launch{top:66%;width:190px;height:88px}
- .blossom-message{padding:27px 18px;border-radius:22px}
- .walk-hint{font-size:8px;letter-spacing:.18em}
+ .blossom-scene{min-height:100svh;min-height:100dvh;padding:28px 0 46px}
+ .blossom-message{width:calc(100% - 34px);max-width:520px;padding:24px 17px 22px;border-radius:20px;z-index:4;background:linear-gradient(145deg,rgba(64,35,59,.62),rgba(42,29,49,.56));backdrop-filter:blur(8px)}
+ .blossom-message .scene-kicker{font-size:9px;letter-spacing:.22em;margin-bottom:10px}
+ .blossom-message h2{font-size:clamp(2.15rem,9vw,3.25rem);line-height:1.04;margin:10px 0}
+ .blossom-message>p:not(.scene-kicker){font-size:14px;line-height:1.55;margin-top:12px}
+ .heart-continue{width:178px;height:78px;margin:20px auto 0}
+ .heart-continue .heart-symbol{font-size:30px}
+ .heart-continue .heart-label{font-size:10px}
+ .petal-layer{z-index:2}
+ .drifting-petal{opacity:.68;filter:drop-shadow(0 2px 4px rgba(65,27,55,.22))}
+ .walk-hint{display:none}
 }
 @media(prefers-reduced-motion:reduce){
  .heart-launch,.heart-symbol,.heart-glow,.entrance-caption,.blossom-scene .scene-art{animation:none!important}

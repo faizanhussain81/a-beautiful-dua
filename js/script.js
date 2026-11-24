@@ -5,6 +5,7 @@ const heartLaunch = document.getElementById('heartLaunch');
 const letterLaunch = document.getElementById('letterLaunch');
 
 const petalGlyphs = ['🌸', '🌺', '🌷', '✿', '❀', '♡', '🌼'];
+const isSmallScreen = window.matchMedia('(max-width: 700px)').matches;
 
 function scatterPetals(layer, count = 34) {
   for (let i = 0; i < count; i++) {
@@ -26,14 +27,14 @@ heartLaunch.addEventListener('click', () => {
   if (heartLaunch.disabled) return;
   heartLaunch.disabled = true;
   entrance.classList.add('leaving');
-  scatterPetals(document.getElementById('entrancePetals'), 65);
+  scatterPetals(document.getElementById('entrancePetals'), isSmallScreen ? 18 : 55);
   window.setTimeout(() => {
     entrance.classList.add('hidden');
     blossom.classList.remove('hidden');
     requestAnimationFrame(() => blossom.classList.add('arriving'));
-    scatterPetals(document.getElementById('blossomPetals'), 75);
-    window.setTimeout(() => scatterPetals(document.getElementById('blossomPetals'), 35), 1800);
-    window.setTimeout(() => scatterPetals(document.getElementById('blossomPetals'), 35), 3800);
+    scatterPetals(document.getElementById('blossomPetals'), isSmallScreen ? 14 : 48);
+    window.setTimeout(() => scatterPetals(document.getElementById('blossomPetals'), isSmallScreen ? 8 : 28), 1800);
+    window.setTimeout(() => scatterPetals(document.getElementById('blossomPetals'), isSmallScreen ? 8 : 28), 3800);
   }, 1050);
 });
 
