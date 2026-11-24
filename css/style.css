@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap');
+:root{--ink:#f8f2eb;--muted:#c4bfd1;--gold:#e7c58a;--rose:#e9a9b9}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 50% 0%,#292344,#15182e 48%,#0d1021);color:var(--ink);font-family:'DM Sans',sans-serif;min-height:100vh;overflow-x:hidden}.sky{position:fixed;inset:0;pointer-events:none;overflow:hidden;z-index:0}.star{position:absolute;color:#f7dca8;animation:twinkle 3.5s infinite}.s1{top:12%;left:12%;font-size:20px}.s2{top:25%;right:15%;font-size:28px;animation-delay:1s}.s3{top:68%;left:7%;font-size:16px;animation-delay:1.5s}.s4{top:76%;right:10%;font-size:22px;animation-delay:.6s}.s5{top:43%;left:88%;font-size:13px}.moon{position:absolute;top:8%;right:12%;width:74px;height:74px;border-radius:50%;background:#f4dfb7;box-shadow:0 0 55px #f4dfb766}.moon:after{content:'';position:absolute;left:22px;top:-8px;width:72px;height:72px;border-radius:50%;background:#191a33}main{position:relative;z-index:1}.hero{min-height:100svh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:90px 22px 70px}.eyebrow,.section-kicker,.letter-top,.letter-bottom,.scroll-note{font-size:10px;letter-spacing:.25em;color:var(--gold);font-weight:700}.hero h1{font:600 clamp(3.5rem,9vw,7.2rem)/.98 'Playfair Display',serif;margin:30px 0 24px;letter-spacing:-.045em}.hero h1 em,.memories h2 em{color:var(--rose);font-weight:500}.hero-copy{color:var(--muted);line-height:1.9;font-size:clamp(14px,2vw,17px);margin:0 0 36px}.primary{border:1px solid #e7c58a88;background:linear-gradient(135deg,#e9c98e,#d99cae);color:#242039;padding:15px 23px;border-radius:999px;font-weight:700;box-shadow:0 10px 35px #dba9b933;cursor:pointer;transition:.25s}.primary:hover{transform:translateY(-3px)}.primary span{margin-left:10px}.scroll-note{position:absolute;bottom:28px;color:#88869f;font-size:9px}.hidden{display:none!important}.letter-section,.memories{max-width:1000px;margin:0 auto;padding:90px 22px 110px;text-align:center;animation:rise .9s ease both}.letter-card{max-width:700px;margin:28px auto;padding:clamp(28px,6vw,58px);text-align:left;background:linear-gradient(145deg,#f7eee4,#eadbdc);color:#3a3040;box-shadow:0 25px 80px #0005;position:relative}.letter-card:before{content:'';position:absolute;inset:10px;border:1px solid #b78c8b66;pointer-events:none}.letter-top,.letter-bottom{text-align:center;color:#a17c69;font-size:9px}.letter-card h2{font:600 2.5rem 'Playfair Display',serif;margin:36px 0 20px}.letter-card p{font:16px/1.9 'Playfair Display',serif;color:#594b55}.letter-card .urdu-line{font-style:italic;color:#986b7c;border-left:2px solid #d49aaa;padding-left:17px}.signature{margin-top:30px!important}.signature span{font-style:italic;color:#a06d80}.letter-bottom{margin-top:35px}.text-button{background:none;border:0;color:var(--gold);padding:12px;cursor:pointer}.memories h2{font:600 clamp(2.6rem,6vw,4.5rem) 'Playfair Display',serif;margin:18px 0 8px}.gallery-intro{color:var(--muted);margin:0 auto 35px;font-size:14px}.photo-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px}.photo-grid figure{margin:0;background:#ffffff0d;border:1px solid #ffffff17;padding:9px 9px 14px;transition:.3s}.photo-grid figure:hover{transform:translateY(-7px)}.photo-grid img{display:block;width:100%;aspect-ratio:4/5;object-fit:cover;background:linear-gradient(145deg,#38304c,#a77d91)}.photo-grid figcaption{font:italic 14px 'Playfair Display',serif;color:#e8d5d7;padding:12px 2px 0}.music-card{max-width:470px;margin:45px auto 0;padding:15px 18px;display:flex;align-items:center;gap:14px;background:#ffffff0c;border:1px solid #ffffff1c;border-radius:16px;text-align:left}.music-icon{width:43px;height:43px;display:grid;place-items:center;border-radius:12px;background:#e6b6bd;color:#34243b;font-size:23px}.music-copy{display:flex;flex-direction:column;gap:4px;flex:1}.music-copy strong{font-size:13px}.music-copy span{font-size:11px;color:var(--muted)}.music-button{width:40px;height:40px;border:0;border-radius:50%;background:var(--gold);color:#28223a;font-weight:700;cursor:pointer}footer{margin-top:55px;color:#aaa4bd;font:italic 15px 'Playfair Display',serif}footer span{color:var(--rose)}@keyframes twinkle{0%,100%{opacity:.35;transform:scale(.8)}50%{opacity:1;transform:scale(1.15)}}@keyframes rise{from{opacity:0;transform:translateY(25px)}to{opacity:1;transform:translateY(0)}}@media(max-width:760px){.moon{width:48px;height:48px;right:8%;top:7%}.moon:after{width:48px;height:48px;left:15px;top:-6px}.photo-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:13px}.letter-card p{font-size:15px}.letter-section,.memories{padding-top:70px}}
+
+/* Romantic garden entrance homepage */
+.garden-hero{position:relative;isolation:isolate;min-height:100svh;background-image:linear-gradient(90deg,rgba(18,13,29,.18),rgba(18,13,29,.06) 50%,rgba(18,13,29,.18)),url('../assets/images/love-garden.png');background-size:cover;background-position:center center;overflow:hidden}
+.garden-shade{position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,13,29,.12),rgba(20,13,29,.08) 55%,rgba(13,16,33,.38));z-index:-1}
+.garden-content{max-width:760px;padding:38px 32px 42px;border:1px solid rgba(255,239,224,.42);background:rgba(255,245,239,.16);backdrop-filter:blur(5px);border-radius:22px;box-shadow:0 18px 70px rgba(26,12,30,.18)}
+.garden-content .eyebrow{color:#fff4e8;text-shadow:0 2px 12px #4a2944}
+.garden-content h1{font-size:clamp(3rem,7vw,6.1rem);color:#fff8f3;text-shadow:0 3px 24px rgba(45,20,39,.45);margin:24px 0}
+.garden-content h1 em{color:#ffe0ed}
+.garden-content .hero-copy{color:#fff8f2;text-shadow:0 2px 12px rgba(45,20,39,.65)}
+.garden-hero .scroll-note{color:#fff4e8;text-shadow:0 2px 10px #372037}
+@media(max-width:760px){.garden-hero{background-position:center center;padding:70px 16px 64px}.garden-content{padding:30px 18px;border-radius:16px}.garden-content h1{font-size:clamp(2.7rem,12vw,4.5rem)}.garden-content .hero-copy br{display:none}}
+
+
+/* Interactive double garden doors + forward walking camera */
+.garden-hero{background-image:none}
+.garden-hero::before{content:"";position:absolute;inset:-5%;z-index:-2;background:url('../assets/images/love-garden.png') center 58%/cover no-repeat;transform:scale(1.04);will-change:transform,background-position}
+.garden-doors{position:absolute;inset:0;z-index:3;display:flex;perspective:1600px;pointer-events:none}
+.garden-door{position:relative;width:50%;height:100%;border:3px solid #4b2c28;box-shadow:inset 0 0 0 8px #b88758,inset 0 0 0 12px #58352d,0 8px 35px #1b101b99;background:repeating-linear-gradient(90deg,#4b2c27 0 5px,#704333 5px 18px,#8b5a3e 18px 22px,#5b342d 22px 37px);transform-style:preserve-3d;transition:transform 1.9s cubic-bezier(.72,0,.2,1);}
+.garden-door::before{content:"";position:absolute;inset:9% 9%;border:5px ridge #c18d58;border-radius:4px;background:linear-gradient(135deg,#6f4535aa,#301e24aa);box-shadow:inset 0 0 0 8px #553329, inset 0 0 0 11px #c18d58;}
+.garden-door::after{content:"✿";position:absolute;top:47%;font-size:clamp(28px,4vw,52px);color:#e8c18b;text-shadow:0 2px 7px #211016;}
+.door-left{transform-origin:left center;border-right:2px solid #d2a16b}.door-left::after{right:8%}.door-right{transform-origin:right center;border-left:2px solid #d2a16b}.door-right::after{left:8%}
+.garden-content{position:relative;z-index:4;transition:opacity .55s ease,transform .7s ease}
+.garden-hero.doors-opening .door-left{transform:rotateY(-112deg)}
+.garden-hero.doors-opening .door-right{transform:rotateY(112deg)}
+.garden-hero.doors-opening .garden-content{opacity:0;transform:scale(.94)}
+.garden-hero.walking::before{animation:walkIntoGarden 6s cubic-bezier(.35,.05,.6,1) forwards}
+.garden-hero.walking .garden-doors{opacity:0;transition:opacity .8s ease 1.5s}
+.garden-hero.walking .garden-shade{background:linear-gradient(180deg,rgba(20,13,29,.02),rgba(20,13,29,.02) 55%,rgba(13,16,33,.18))}
+.garden-hero.walking .scroll-note{opacity:0}
+@keyframes walkIntoGarden{0%{transform:scale(1.04);background-position:center 58%}35%{transform:scale(1.18);background-position:center 62%}70%{transform:scale(1.34);background-position:center 68%}100%{transform:scale(1.48);background-position:center 74%}}
+@media(max-width:760px){.garden-door{border-width:2px}.garden-door::before{inset:12% 7%;border-width:3px;box-shadow:inset 0 0 0 5px #553329,inset 0 0 0 7px #c18d58}.garden-door::after{font-size:30px}.garden-hero::before{background-position:center center}}
+@media(prefers-reduced-motion:reduce){.garden-door{transition-duration:.01ms}.garden-hero.walking::before{animation:none;transform:scale(1.12)}}
+
+/* Where My Duas Bloom: flower-filled gate opening experience */
+:root{scroll-behavior:smooth}
+.garden-hero{min-height:100svh}
+.garden-hero::before{filter:saturate(1.12) brightness(1.06)}
+.garden-doors{overflow:visible}
+.garden-door{border-color:#59372f}
+.garden-content{background:rgba(48,28,47,.32);border-color:rgba(255,231,218,.58);box-shadow:0 18px 70px rgba(22,9,26,.25)}
+.flower-flight{position:absolute;inset:0;z-index:5;overflow:hidden;pointer-events:none;opacity:0}
+.garden-hero.doors-opening .flower-flight{opacity:1}
+.flying-flower{position:absolute;display:block;font-size:var(--size);line-height:1;filter:drop-shadow(0 3px 5px rgba(55,24,48,.24));animation:flowerFly var(--duration) ease-out var(--delay) forwards;will-change:transform,opacity}
+@keyframes flowerFly{
+  0%{transform:translate3d(0,100px,0) rotate(-35deg) scale(.55);opacity:0}
+  14%{opacity:1}
+  48%{transform:translate3d(calc(var(--drift)*.45),-34vh,0) rotate(145deg) scale(1.05);opacity:1}
+  100%{transform:translate3d(var(--drift),-115vh,0) rotate(330deg) scale(.72);opacity:0}
+}
+.garden-hero.walking::before{animation:walkIntoGarden 7s cubic-bezier(.35,.05,.6,1) forwards}
+.garden-hero.walking .flower-flight{opacity:1}
+.letter-section{padding-top:80px}
+.garden-ending{padding:35px 20px 80px;text-align:center;color:#f5e6dc}
+.garden-ending p{font:italic 1.2rem 'Playfair Display',serif;color:#eac2cf}
+.garden-ending h2{font:600 clamp(2rem,5vw,3.5rem) 'Playfair Display',serif}
+@media(max-width:760px){.flying-flower{filter:drop-shadow(0 2px 3px rgba(55,24,48,.2))}.garden-content{max-width:94vw}}
+@media(prefers-reduced-motion:reduce){.flying-flower{animation-duration:1s!important}.garden-hero.walking::before{animation:none;transform:scale(1.12)}}
+
+/* Landing page follows the user's open lavender garden reference artwork.
+   The artwork already contains the open gates, welcome lettering and Enter button. */
+.garden-hero{background:none!important;position:relative;min-height:100svh;overflow:hidden}
+.garden-hero::before{
+  content:"";position:absolute;inset:0;z-index:-2;
+  background:url('../assets/images/love-garden.png') center center/cover no-repeat;
+  transform:scale(1);will-change:transform,background-position;
+}
+.garden-shade{background:transparent!important}
+.garden-doors{display:none!important}
+.garden-content{
+  position:absolute!important;inset:0!important;max-width:none!important;
+  padding:0!important;border:0!important;border-radius:0!important;
+  background:transparent!important;backdrop-filter:none!important;box-shadow:none!important;
+  pointer-events:none!important;opacity:1!important;transform:none!important;
+}
+.garden-content .eyebrow,
+.garden-content h1,
+.garden-content .hero-copy{display:none!important}
+.image-enter-button{
+  display:block!important;position:absolute!important;
+  left:50%!important;top:53.5%!important;transform:translate(-50%,-50%)!important;
+  width:clamp(150px,16vw,230px)!important;height:clamp(44px,6vw,70px)!important;
+  padding:0!important;margin:0!important;border:0!important;border-radius:999px!important;
+  background:transparent!important;color:transparent!important;
+  box-shadow:none!important;cursor:pointer!important;pointer-events:auto!important;
+  font-size:0!important;z-index:8!important;
+}
+.image-enter-button:hover{transform:translate(-50%,-50%) scale(1.04)!important;background:rgba(255,255,255,.06)!important}
+.garden-hero.doors-opening .image-enter-button{opacity:0;pointer-events:none}
+.garden-hero.walking::before{animation:walkIntoGarden 7s cubic-bezier(.35,.05,.6,1) forwards}
+.garden-hero .scroll-note{display:none}
+@keyframes walkIntoGarden{
+  0%{transform:scale(1);background-position:center center}
+  35%{transform:scale(1.12);background-position:center 57%}
+  70%{transform:scale(1.28);background-position:center 65%}
+  100%{transform:scale(1.48);background-position:center 72%}
+}
+@media(max-width:760px){
+ .garden-hero::before{background-position:center center}
+ .image-enter-button{top:53.5%!important;width:42vw!important;height:12vw!important}
+}
+
+/* Second scene: the uploaded cherry-blossom pathway appears as the visitor walks in. */
+.garden-hero::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  z-index:-1;
+  pointer-events:none;
+  opacity:0;
+  background:url('../assets/images/cherry-blossom-pathway.png') center center/cover no-repeat;
+  transform:scale(1.04);
+  transition:opacity 1.8s ease, transform 7s cubic-bezier(.2,.65,.25,1);
+}
+.garden-hero.walking::after{
+  opacity:1;
+  transform:scale(1.24);
+}
+
+/* ===== Refined two-scene romantic garden experience ===== */
+body{background:#21182b;color:#fff8f3}
+.garden-scene{position:relative;isolation:isolate;min-height:100svh;width:100%;overflow:hidden;display:grid;place-items:center}
+.garden-scene.hidden{display:none!important}
+.scene-art{position:absolute;inset:0;z-index:-3;background-position:center;background-size:cover;background-repeat:no-repeat;transform:scale(1.02)}
+.entrance-art{background-image:url('../assets/images/love-garden.png')}
+.blossom-art{background-image:url('../assets/images/cherry-blossom-pathway.png');transform:scale(1.08)}
+.scene-vignette{position:absolute;inset:0;z-index:-2;background:linear-gradient(180deg,rgba(35,13,36,.04),rgba(35,13,36,.08) 48%,rgba(23,14,29,.36))}
+.entrance-caption{position:absolute;top:8%;left:50%;transform:translateX(-50%);width:min(90%,720px);text-align:center;color:#fff9f4;text-shadow:0 2px 22px rgba(48,17,42,.5);animation:captionFloat 5s ease-in-out infinite}
+.entrance-caption p,.scene-kicker{font:700 10px 'DM Sans',sans-serif;letter-spacing:.32em;margin:0 0 16px}
+.entrance-caption h1{font:500 clamp(2.5rem,6.6vw,5.2rem)/.98 'Playfair Display',serif;margin:0 0 12px;letter-spacing:-.035em}
+.entrance-caption h1 em,.blossom-message h2 em{color:#ffe0ed;font-weight:500}
+.entrance-caption span{font:italic clamp(13px,1.8vw,17px) 'Playfair Display',serif}
+.heart-launch{position:absolute;left:50%;top:66%;transform:translate(-50%,-50%);width:clamp(190px,22vw,260px);height:clamp(88px,10vw,112px);border:1px solid rgba(255,245,240,.78);border-radius:100px;background:linear-gradient(135deg,rgba(255,239,238,.91),rgba(247,202,218,.92));color:#6c3c57;box-shadow:0 12px 42px rgba(75,28,58,.24),inset 0 1px 0 #fff;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;cursor:pointer;z-index:4;transition:transform .35s ease,box-shadow .35s ease,filter .35s ease;backdrop-filter:blur(8px);animation:heartBreathe 2.4s ease-in-out infinite}
+.heart-launch:hover{transform:translate(-50%,-50%) scale(1.07);box-shadow:0 18px 55px rgba(75,28,58,.34),0 0 34px rgba(255,218,235,.75);filter:brightness(1.04)}
+.heart-launch:active{transform:translate(-50%,-50%) scale(.96)}
+.heart-launch:disabled{cursor:default}
+.heart-glow{position:absolute;inset:-10px;border-radius:inherit;border:1px solid rgba(255,235,244,.6);animation:ringPulse 2.4s ease-out infinite;pointer-events:none}
+.heart-symbol{font-size:35px;line-height:1;color:#c95d83;text-shadow:0 3px 12px rgba(178,62,112,.24);animation:heartBeat 1.35s ease-in-out infinite}
+.heart-label{font:600 11px 'DM Sans',sans-serif;letter-spacing:.07em;color:#694055}
+@keyframes heartBeat{0%,100%{transform:scale(1)}15%{transform:scale(1.18)}30%{transform:scale(1)}45%{transform:scale(1.12)}}
+@keyframes heartBreathe{0%,100%{box-shadow:0 12px 42px rgba(75,28,58,.24),0 0 0 0 rgba(255,220,236,.4)}50%{box-shadow:0 16px 48px rgba(75,28,58,.3),0 0 30px 8px rgba(255,220,236,.3)}}
+@keyframes ringPulse{0%{transform:scale(.98);opacity:.8}100%{transform:scale(1.18);opacity:0}}
+@keyframes captionFloat{0%,100%{transform:translate(-50%,0)}50%{transform:translate(-50%,-7px)}}
+.entrance-scene.leaving{animation:sceneFade .95s ease forwards}
+.blossom-scene{opacity:0;transition:opacity 1.4s ease}
+.blossom-scene.arriving{opacity:1}
+.blossom-scene .scene-art{animation:blossomWalk 18s ease-in-out infinite alternate}
+.blossom-vignette{background:linear-gradient(180deg,rgba(35,13,36,.22),rgba(35,13,36,.06) 42%,rgba(23,14,29,.4))}
+.blossom-message{position:relative;z-index:2;text-align:center;width:min(90%,650px);padding:clamp(25px,5vw,48px);border:1px solid rgba(255,244,240,.5);border-radius:28px;background:linear-gradient(145deg,rgba(75,39,67,.3),rgba(50,34,57,.2));box-shadow:0 18px 70px rgba(31,13,35,.16);backdrop-filter:blur(5px);text-shadow:0 2px 15px rgba(36,13,33,.5);animation:rise 1.2s ease both}
+.scene-kicker{color:#fff1e8}
+.blossom-message h2{font:500 clamp(2.6rem,7vw,5.3rem)/1.02 'Playfair Display',serif;margin:14px 0}
+.blossom-message>p:not(.scene-kicker){font:italic clamp(14px,2vw,18px)/1.7 'Playfair Display',serif;color:#fff5f0;margin:16px 0 0}
+.heart-continue{position:relative;left:auto;top:auto;transform:none;margin:30px auto 0;animation:heartBreathe 2.4s ease-in-out infinite}
+.heart-continue:hover{transform:scale(1.06)}
+.heart-continue:active{transform:scale(.96)}
+.walk-hint{position:absolute;bottom:27px;left:50%;transform:translateX(-50%);font:700 9px 'DM Sans',sans-serif;letter-spacing:.28em;color:#fff4ee;text-shadow:0 2px 12px #3d243b;white-space:nowrap}
+.walk-hint span{color:#ffe2a7;margin-left:8px}
+.petal-layer{position:absolute;inset:0;z-index:3;overflow:hidden;pointer-events:none}
+.drifting-petal{position:absolute;top:-9%;font-size:var(--size);filter:drop-shadow(0 3px 6px rgba(65,27,55,.18));animation:petalDrift var(--duration) ease-in var(--delay) forwards;will-change:transform,opacity}
+@keyframes petalDrift{0%{transform:translate3d(0,-5vh,0) rotate(0) scale(.65);opacity:0}12%{opacity:.95}55%{transform:translate3d(calc(var(--drift)*.55),52vh,0) rotate(calc(var(--spin)*.55)) scale(1);opacity:.9}100%{transform:translate3d(var(--drift),112vh,0) rotate(var(--spin)) scale(.7);opacity:0}}
+@keyframes sceneFade{to{opacity:0;transform:scale(1.035);filter:blur(4px)}}
+@keyframes blossomWalk{0%{transform:scale(1.08);background-position:center 48%}100%{transform:scale(1.18);background-position:center 57%}}
+.letter-section{position:relative;z-index:5}
+@media(max-width:700px){
+ .entrance-caption{top:7%;width:92%}
+ .entrance-caption h1{font-size:clamp(2.5rem,12vw,4rem)}
+ .entrance-caption p{font-size:9px}
+ .entrance-caption span{font-size:13px}
+ .heart-launch{top:66%;width:190px;height:88px}
+ .blossom-message{padding:27px 18px;border-radius:22px}
+ .walk-hint{font-size:8px;letter-spacing:.18em}
+}
+@media(prefers-reduced-motion:reduce){
+ .heart-launch,.heart-symbol,.heart-glow,.entrance-caption,.blossom-scene .scene-art{animation:none!important}
+ .drifting-petal{animation-duration:2s!important}
+}
